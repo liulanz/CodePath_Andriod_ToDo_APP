@@ -31,9 +31,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
+![walkthrough](to_do_demo.gif).
 
 ## Project Analysis
 
@@ -47,6 +45,7 @@ This is the first Android app development platform that I've used so far. I stru
 
 
 **Question 2:** "Take a moment to reflect on the `ArrayAdapter` used in your pre-work. How would you describe an adapter in this context and what is its function in Android? Why do you think the adapter is important? Explain the purpose of the `convertView` in the `getView` method of the `ArrayAdapter`." 
+
 **Answer:** 
 
 I think the ArrayAdapter collects all the elements from an array and prepares the data for the usages in user interface widgets such as the ``ListView``. It's important on updating the list in user interface widgets and changing the data object. `getView` method will get the data from `ArrayAdapter`. The`ArrayAdapter` uses the `convertView` as a way of recycling old View objects that are no longer being used. Instead of creating new view each time, it can re-use the old, so it doesn't waste too much memory with many invisible views. Android Studio also have a new data type called `recyclerview`.
